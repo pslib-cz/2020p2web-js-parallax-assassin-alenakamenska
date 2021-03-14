@@ -26,4 +26,19 @@
         <p>Creating parallax effect</p>
     </section>
 </body>
+<script>
+
+    window.onscroll = (e) => {fce(document.getElementsByClassName("layer-man")[0]), 
+    fce1(document.getElementsByClassName("layer-4")[0]) }
+    function fce(prvek){
+        var value = - window.scrollY
+        prvek.style.transform = "translateY( " + value + "px) translateX( " + value + "px) "
+    }
+    function fce1(prvek){
+        var value = - window.scrollY
+        prvek.style.transform = "translateY( " + value + "px)"
+    }
+
+
+</script>
 </html>
